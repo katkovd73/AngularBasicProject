@@ -1,0 +1,10 @@
+name: GitHub Actions Demo
+on: push
+jobs:
+  Action-Job1:
+    name: Building Code
+    runs-on: ubuntu-latest
+    steps:
+      # Use Action located in https://github.com/actions
+      - name: Check out repository code
+        uses: actions/checkout@v2
